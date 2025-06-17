@@ -1,0 +1,38 @@
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    background: transparent;
+    border: 2px solid #4ecdc4;
+    color: #4ecdc4;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+.logoButton {
+    background: transparent;
+    border: 2px solid #4ecdc4;
+    color: #4ecdc4;
+    
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+
+.logo:hover {
+  background: rgba(78, 205, 196, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(78, 205, 196, 0.2);
+}
+
+.logo span {
+  position: fixed;
+  z-index: 2;
+}

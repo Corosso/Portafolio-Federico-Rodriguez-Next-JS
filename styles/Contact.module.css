@@ -1,0 +1,237 @@
+.container {
+  min-height: 100vh;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  overflow: hidden;
+}
+
+.particlesWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.menuContainer {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.menuButton {
+  background: transparent;
+  border: 2px solid #4ecdc4;
+  color: #4ecdc4;
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.menuIcon {
+  filter: invert(76%) sepia(35%) saturate(495%) hue-rotate(116deg) brightness(89%) contrast(87%);
+  transition: all 0.3s ease;
+}
+
+
+
+.menuButton:hover {
+  background: rgba(78, 205, 196, 0.1);
+  transform: scale(1.05);
+}
+
+.contactSection {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 6rem 2rem 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.contactInfo {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contactText {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactDetails {
+  color: #4ecdc4;
+  line-height: 1.6;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4ecdc4;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #4ecdc4;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #4ecdc4;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.submitButton {
+  width: 100%;
+  padding: 1rem;
+  background: #4ecdc4;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #4ecdc4;
+}
+
+.menuContent {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 5px;
+  display: none;
+}
+
+.menuContent.show {
+  display: block;
+}
+
+.menuItem {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.menuItem:hover {
+  color: #007bff;
+}
+
+.statusMessage {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  animation: slideIn 0.5s ease-out;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.success {
+  background: rgba(0, 200, 83, 0.15);
+  color: #00ff95;
+  border: 2px solid #00ff95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.success::before {
+  content: "✓";
+  font-size: 2rem;
+  font-weight: bold;
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.error {
+  background: rgba(255, 0, 0, 0.15);
+  color: #ff4444;
+  border: 2px solid #ff4444;
+}
+
+/* Add a hover effect for extra interactivity */
+.statusMessage:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 4rem 1rem 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .form {
+    padding: 1rem;
+  }
+}

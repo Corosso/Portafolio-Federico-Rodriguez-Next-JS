@@ -1,0 +1,353 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #1a1a1a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.particlesWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.header {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  transition: all 0.5s ease;
+}
+
+.name {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  opacity: 1;
+  transform-origin: center;
+  background: rgba(26, 26, 26, 0.8);
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.headerScrolled {
+  background: rgba(26, 26, 26, 0.95);
+  padding: 1rem;
+}
+
+.headerScrolled .name {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: #4ecdc4;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.intro p {
+  margin: 1rem 0;
+}
+
+.animatedText {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: #4ecdc4;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+.animatedText p {
+  margin: 1rem 0;
+}
+
+.section2,
+.section3 {
+  height: 60vh; /* Reducido para mejor distribución */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.labelsContainer {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.label {
+  color: #4ecdc4;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.label:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.animatedButton {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  padding: 1.2rem 2.5rem;
+  border: 2px solid #4ecdc4;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  min-width: 200px;
+  text-align: center;
+}
+
+.animatedButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #4ecdc4, #45b7af);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.animatedButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(78, 205, 196, 0.2);
+}
+
+.animatedButton:hover::before {
+  opacity: 0.1;
+}
+
+.animatedButton span {
+  position: relative;
+  z-index: 2;
+  color: #4ecdc4;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.animatedButton:hover span {
+  color: #ffffff;
+}
+
+.section2 h2,
+.section3 h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.section2 p,
+.section3 p {
+  color: #e0e0e0;
+}
+
+/* Ajustamos el estilo de las partículas para que combinen con el nuevo diseño */
+.particlesContainer {
+  --particle-color: #4ecdc4;
+}
+
+.menuContainer {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Estilo específico para el contenedor del logo */
+.menuContainer:first-of-type {
+  right: auto;
+  left: 2rem;
+}
+
+.menuButton {
+  background: transparent;
+  border: 2px solid #4ecdc4;
+  color: #4ecdc4;
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.menuIcon {
+  filter: invert(76%) sepia(35%) saturate(495%) hue-rotate(116deg) brightness(89%) contrast(87%);
+  transition: all 0.3s ease;
+}
+
+.menuButton:hover {
+  background: rgba(78, 205, 196, 0.1);
+  transform: scale(1.05);
+}
+
+.menuButton:hover .menuIcon {
+  transform: scale(1.1);
+}
+
+.menuButton.active {
+  background: rgba(78, 205, 196, 0.2);
+}
+
+.menuContent {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 1rem;
+  background: rgba(26, 26, 26, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(78, 205, 196, 0.2);
+}
+
+.menuContent.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menuItem {
+  color: #4ecdc4;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.menuItem:hover {
+  background: rgba(78, 205, 196, 0.1);
+  transform: translateX(5px);
+}
+
+/* Estilos para el ícono de scroll */
+.scrollIcon {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.scrollText {
+  text-align: center;
+  color: #4ecdc4;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+}
+
+.scrollIconImage {
+  filter: drop-shadow(0 0 8px rgba(78, 205, 196, 0.5));
+  transition: all 0.3s ease;
+}
+
+.scrollIcon:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.scrollIcon:hover .scrollText {
+  opacity: 1;
+  color: #ff6b6b;
+  text-shadow: 0 0 15px rgba(255, 107, 107, 0.4);
+}
+
+.scrollIcon:hover .scrollIconImage {
+  filter: drop-shadow(0 0 12px rgba(255, 107, 107, 0.6));
+  transform: translateY(2px);
+}
+
+.scrollIcon {
+  animation: float 2s ease-in-out infinite;
+}
+
+

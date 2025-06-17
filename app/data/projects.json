@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "ValoAI",
+      "description": "Modelo de regresion logistica para predecir la victoria de un equipo en el juego de Valorant segun ciertas estadisticas.",
+      "tech": ["Python", "Sci-kit learn"],
+      "github": "https://github.com/Corosso/ValoAI",
+      "demo": null,
+      "image": "/images/projects/valoai.png"
+    },
+    {
+      "id": 2,
+      "title": "Proyecto App y SW",
+      "description": "Sistema web con arquitectura MVC para gestión de productos, desarrollado con .NET Framework, JavaScript y SQL Server.",
+      "tech": ["C#", ".NET Framework", "JavaScript", "SQL Server"],
+      "github": "https://github.com/Corosso/ProyectoAppySW",
+      "demo": null,
+      "image": "/images/projects/proyecto-app-sw.png"
+    },
+    {
+      "id": 3,
+      "title": "Portafolio Web",
+      "description": "Portafolio personal responsivo y fullstack con secciones de presentación, proyectos y contacto.",
+      "tech": ["JavaScript", "Next.js", "CSS", "GSAP"],
+      "github": "https://github.com/Corosso/portafolio-css-js-html",
+      "demo": "https://portafolio-css-js-html.vercel.app/",
+      "image": "/images/projects/portafolio.png"
+    },
+    {
+      "id": 4,
+      "title": "FSM Naval Battle",
+      "description": "Juego multijugador hecho en Python basado en batalla naval usando sockets para la red, UI con Pygame y un FSM para el servidor",
+      "tech": ["Python", "Sockets", "Pygame", "FSM"],
+      "github": "https://github.com/Corosso/fsm-naval-battle",
+      "demo": null,
+      "image": "/images/projects/fsm_naval_battle.png"
+    },
+    {
+      "id": 5,
+      "title": "mentesuniversales.com",
+      "description": "Landing page para la empresa mentes universales usando HTML, CSS y un poco de JavaScript",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "github": null,
+      "demo": "https://mentesuniversales.com/",
+      "image": "/images/projects/mentesuniversales.png"
+    }
+  ]
+}
