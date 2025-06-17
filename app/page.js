@@ -167,6 +167,20 @@ export default function Home() {
       ease: "power1.inOut"
     });
 
+    gsap.to(scrollIconRef.current,
+      {
+        opacity: 0,        
+        scrollTrigger: {
+        markers: true,
+        trigger: "container",
+        start: "80% 70%", 
+        end: "90% 90%",
+        toggleActions: "play none none reverse"
+        
+      },
+      
+    });
+
     // Animación del texto
     gsap.fromTo(textRef.current,
       {
