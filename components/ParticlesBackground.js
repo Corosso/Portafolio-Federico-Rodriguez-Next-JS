@@ -19,7 +19,7 @@ export default function ParticlesBackground() {
           // Tu configuración de particles aquí
           "particles": {
     "number": {
-      "value": 111,
+      "value": 66,
       "density": {
         "enable": true,
         "value_area": 333
