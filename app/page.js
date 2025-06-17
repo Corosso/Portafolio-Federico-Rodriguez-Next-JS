@@ -170,8 +170,7 @@ export default function Home() {
     gsap.to(scrollIconRef.current,
       {
         opacity: 0,        
-        scrollTrigger: {
-        markers: true,
+        scrollTrigger: {        
         trigger: "container",
         start: "80% 70%", 
         end: "90% 90%",
