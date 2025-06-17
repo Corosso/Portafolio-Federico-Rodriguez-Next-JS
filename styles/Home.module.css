@@ -38,23 +38,25 @@
   transform: translateX(-50%);
   z-index: 10;
   text-align: center;
-  width: 100%;
-  padding: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  padding: 1rem;
   transition: all 0.5s ease;
 }
 
 .name {
-  font-size: 4.5rem;
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
   font-weight: bold;
   color: #ffffff;
-  margin: 0;
+  margin: 0 auto;
   opacity: 1;
   transform-origin: center;
   background: rgba(26, 26, 26, 0.8);
-  padding: 2rem;
+  padding: clamp(0.8rem, 2vw, 2rem);
   backdrop-filter: blur(10px);
   border-radius: 12px;
   display: inline-block;
+  width: fit-content;
 }
 
 .headerScrolled {
@@ -63,7 +65,7 @@
 }
 
 .headerScrolled .name {
-  font-size: 2rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
   padding: 0.5rem 1rem;
 }
 
@@ -348,6 +350,53 @@
 
 .scrollIcon {
   animation: float 2s ease-in-out infinite;
+}
+
+/* Add these media queries */
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 3rem;
+    padding: 1.5rem;
+  }
+  
+  .header {
+    width: 95%;
+    padding: 0.8rem;
+  }
+  
+  .headerScrolled .name {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+  .header {
+    width: 98%;
+    padding: 0.5rem;
+    top: 5px;
+  }
+  
+  .headerScrolled .name {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .name {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+  
+  .headerScrolled .name {
+    font-size: 1rem;
+  }
 }
 
 
