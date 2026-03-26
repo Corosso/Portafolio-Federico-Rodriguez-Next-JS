@@ -49,6 +49,8 @@ Thumbs.db
 logs
 *.log
 
+# Claude
+.claude
 # Lock files (optional, depending on your team's preference)
 # package-lock.json
 # yarn.lock
