@@ -2,47 +2,73 @@
   "projects": [
     {
       "id": 1,
-      "title": "ValoAI",
-      "description": "Modelo de regresion logistica para predecir la victoria de un equipo en el juego de Valorant segun ciertas estadisticas.",
-      "tech": ["Python", "Sci-kit learn"],
-      "github": "https://github.com/Corosso/ValoAI",
-      "demo": null,
-      "image": "/images/projects/valoai.png"
+      "title": "Elijah",
+      "description": "Desarrollo fullstack de una aplicacion web para una empresa de transporte ejecutivo de lujo. Interfaz moderna con enfoque en experiencia de usuario premium.",
+      "tech": ["Typescript", "Python", "HTML", "CSS"],
+      "github": null,
+      "demo": "https://elijah-ux-ui.vercel.app/",
+      "landing": null,
+      "image": "/images/projects/elijah.png"
     },
     {
       "id": 2,
-      "title": "Proyecto App y SW",
-      "description": "Sistema web con arquitectura MVC para gestión de productos, desarrollado con .NET Framework, JavaScript y SQL Server.",
-      "tech": ["C#", ".NET Framework", "JavaScript", "SQL Server"],
-      "github": "https://github.com/Corosso/ProyectoAppySW",
-      "demo": null,
-      "image": "/images/projects/proyecto-app-sw.png"
+      "title": "VuenAI",
+      "description": "Colabore en el desarrollo de una plataforma de Business Intelligence impulsada por inteligencia artificial, integrando la API Realtime de OpenAI para analisis de datos en tiempo real.",
+      "tech": ["Python", "OpenAI", "HTML", "CSS"],
+      "github": null,
+      "demo": "https://app.vuen.ai/",
+      "landing": null,
+      "image": "/images/projects/vuenai.png"
     },
     {
       "id": 3,
-      "title": "Portafolio Web",
-      "description": "Portafolio personal responsivo y fullstack con secciones de presentación, proyectos y contacto.",
-      "tech": ["JavaScript", "Next.js", "CSS", "GSAP"],
-      "github": "https://github.com/Corosso/portafolio-css-js-html",
-      "demo": "https://portafolio-css-js-html.vercel.app/",
-      "image": "/images/projects/portafolio.png"
+      "title": "LUM",
+      "description": "Plataforma en desarrollo para mi emprendimiento. Actualmente cuenta con una landing page funcional mientras se construye la aplicacion principal.",
+      "tech": ["Python", "Typescript", "HTML", "CSS"],
+      "github": null,
+      "demo": null,
+      "landing": "https://landing-lum.vercel.app/",
+      "image": "/images/projects/lum.png",
+      "mobileScreenshot": true
     },
     {
       "id": 4,
-      "title": "FSM Naval Battle",
-      "description": "Juego multijugador hecho en Python basado en batalla naval usando sockets para la red, UI con Pygame y un FSM para el servidor",
-      "tech": ["Python", "Sockets", "Pygame", "FSM"],
-      "github": "https://github.com/Corosso/fsm-naval-battle",
+      "title": "ValoAI",
+      "description": "Modelo de Machine Learning basado en regresion logistica para predecir resultados de partidas en Valorant, analizando estadisticas clave de rendimiento de equipos.",
+      "tech": ["Python", "Sci-kit learn"],
+      "github": "https://github.com/Corosso/ValoAI",
       "demo": null,
-      "image": "/images/projects/fsm_naval_battle.png"
+      "landing": null,
+      "image": "/images/projects/valoai.png"
     },
     {
       "id": 5,
+      "title": "Portafolio Web",
+      "description": "Portafolio personal fullstack con animaciones interactivas, diseno responsivo y formulario de contacto funcional.",
+      "tech": ["JavaScript", "Next.js", "CSS", "GSAP"],
+      "github": "https://github.com/Corosso/portafolio-css-js-html",
+      "demo": "https://portafolio-css-js-html.vercel.app/",
+      "landing": null,
+      "image": "/images/projects/portafolio.png"
+    },
+    {
+      "id": 6,
+      "title": "FSM Naval Battle",
+      "description": "Juego multijugador de batalla naval con arquitectura cliente-servidor. Utiliza sockets para comunicacion en red, Pygame para la interfaz grafica y una maquina de estados finitos para la logica del servidor.",
+      "tech": ["Python", "Sockets", "Pygame", "FSM"],
+      "github": "https://github.com/Corosso/fsm-naval-battle",
+      "demo": null,
+      "landing": null,
+      "image": "/images/projects/fsm_naval_battle.png"
+    },
+    {
+      "id": 7,
       "title": "mentesuniversales.com",
-      "description": "Landing page para la empresa mentes universales usando HTML, CSS y un poco de JavaScript",
+      "description": "Diseno y desarrollo de la landing page corporativa para Mentes Universales, una empresa de consultoria educativa.",
       "tech": ["HTML", "CSS", "JavaScript"],
       "github": null,
       "demo": "https://mentesuniversales.com/",
+      "landing": null,
       "image": "/images/projects/mentesuniversales.png"
     }
   ]
