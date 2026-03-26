@@ -10,7 +10,11 @@
   }
 }
 
-html,
+html {
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -28,6 +32,11 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+#particles-js,
+#particles-js canvas {
+  pointer-events: none !important;
 }
 
 a {
